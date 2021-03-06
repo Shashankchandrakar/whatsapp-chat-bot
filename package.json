@@ -17,6 +17,10 @@
   "author": "Shashank",
   "license": "ISC",
   "engines": {
-    "node": "15.8.0"
+    "node": "15.8.0",
+    "npm": "7.5.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.24.3"
   }
 }
