@@ -8,7 +8,9 @@
     "whatsapp-web.js": "^1.12.5"
   },
   "scripts": {
+    "heroku-prebuild": "npm install --dev",
     "start": "node ./app.js",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
