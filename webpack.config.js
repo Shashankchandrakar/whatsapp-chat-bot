@@ -6,4 +6,10 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist')
     },
+    target: 'node'
+};
+const nodeExternals = require('webpack-node-externals');
+
+module.exports = {
+    externals: [nodeExternals()],
 };

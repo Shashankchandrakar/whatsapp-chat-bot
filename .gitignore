@@ -102,8 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
-
-./session.json
+image.png
 session.json
 
 /node_modules

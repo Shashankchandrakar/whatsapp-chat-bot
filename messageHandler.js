@@ -41,7 +41,7 @@ function getMemeUrl(https) {
 }
 
 async function getMemeFileName(https, memeUrl, message) {
-    let pathToImage = "/Users/gmp/WebstormProjects/whatsapp/image.png"
+    let pathToImage = "image.png"
     let file = fs.createWriteStream(pathToImage);
     let request = new Promise((resolve,reject) => {https.get(memeUrl, function (response) {
         response.pipe(file);
