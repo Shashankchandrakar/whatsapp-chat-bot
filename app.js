@@ -9,9 +9,11 @@ let sessionData;
 if(fs.existsSync(SESSION_FILE_PATH)) {
     sessionData = require(SESSION_FILE_PATH);
 }
+
 // Use the saved values
 const client = new Client({
-    session: sessionData
+    session: sessionData,
+    puppeteer: {headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-extensions']}
 });
 
 client.on('qr', qr => {
