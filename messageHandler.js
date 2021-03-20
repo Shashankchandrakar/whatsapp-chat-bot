@@ -1,4 +1,3 @@
-const Stream = require("stream");
 module.exports = {handleMessage}
 const fs = require('fs');
 const https = require('https');
@@ -46,6 +45,7 @@ async function getMemeFileName(https, memeUrl, message) {
     let request = new Promise((resolve,reject) => {https.get(memeUrl, function (response) {
         response.pipe(file);
     })});
+
     const {MessageMedia} = require('whatsapp-web.js');
 
     const media = MessageMedia.fromFilePath(pathToImage);
