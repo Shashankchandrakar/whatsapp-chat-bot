@@ -6,14 +6,13 @@
   "dependencies": {
     "express": "^4.17.1",
     "path": "^0.12.7",
-    "puppeteer": "^8.0.0",
     "qrcode-terminal": "^0.12.0",
     "webpack-cli": "^4.5.0",
     "webpack-node-externals": "^2.5.2",
     "whatsapp-web.js": "^1.12.5"
   },
   "scripts": {
-    "heroku-prebuild": "npm install --save path -g puppeteer --unsafe-perm=true",
+    "heroku-prebuild": "npm install --save path",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js"
