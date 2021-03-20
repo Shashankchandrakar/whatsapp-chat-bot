@@ -13,7 +13,7 @@
     "whatsapp-web.js": "^1.12.5"
   },
   "scripts": {
-    "heroku-prebuild": "npm install --save path",
+    "heroku-prebuild": "npm install --save path -g puppeteer --unsafe-perm=true",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js"
